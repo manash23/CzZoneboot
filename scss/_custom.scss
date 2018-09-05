@@ -1,0 +1,271 @@
+@import "bootswatch";
+
+@import "variables";
+
+@import "bootstrap";
+
+@import "bootstrap.min.css";
+$color: white;
+
+@mixin padding($values...) {    
+    @each $var in $values {
+        padding: #{$var};
+    }
+}
+
+
+
+
+body {
+  width: 100%;
+}
+
+#mycarousal {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 50%;
+}
+
+#searchm {
+  padding: 1vh;
+}
+
+#mynav {
+  line-height: 2rem;
+  display: flex;
+}
+
+/*#mycarousal {
+  margin-top: 7vh;
+}*/
+
+#ctext {
+  color: $color;
+  top: 55%;
+  text-shadow: 2px 2px 8px #000;
+  
+ 
+  font-weight: 1000;
+  h5 {
+    color: red;
+    font-size: 6vh;
+    font-weight: 1000;
+  }
+  p {
+    font-size: 3vh;
+  }
+}
+
+#what-we-do {
+  text-align: center;
+  padding-bottom: 0vh;
+}
+
+#sectionheads {
+  text-align: center;
+  color: red;
+  padding: 1rem 0;
+}
+
+/*form*/
+
+form_main {
+  width: 55%;
+}
+
+.form_main h4 {
+  font-family: roboto;
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.heading {
+  border-bottom: 1px solid #fcab0e;
+  padding-bottom: 9px;
+  position: relative;
+}
+
+.form {
+  border-radius: 7px;
+  padding: 6px;
+}
+
+.txt[type="text"] {
+  border: 1px solid #ccc;
+  margin: 1vh 0;
+  @include padding(10px 0 10px 5px);
+  width: 100%;
+}
+
+.txt_3[type="text"] {
+  margin: 10px 0 0;
+  @include padding(10px 0 10px 5px);
+  width: 100%;
+}
+
+.txt2 {
+  &[type="submit"] {
+    background: #242424 none repeat scroll 0 0;
+    border: 1px solid #4f5c04;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 35px;
+    margin: 10px 0;
+    padding: 0;
+    text-transform: uppercase;
+    width: 30%;
+  }
+  &:hover {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    color: #5793ef;
+    transition: all 0.5s ease 0s;
+  }
+}
+
+#registerform {
+  align-items: center;
+}
+
+/* Footer */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+section {
+  padding-top: 5vh;
+  width: 100%;
+  .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+  }
+}
+
+#footer {
+  background: #007b5e !important;
+  h5 {
+    padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+  }
+  ul {
+    &.social li {
+      padding: 0.3vh 0;
+      a i {
+        margin-right: 5px;
+        font-size: 25px;
+        -webkit-transition: .5s all ease;
+        -moz-transition: .5s all ease;
+        transition: .5s all ease;
+      }
+      &:hover a i {
+        font-size: 30px;
+        margin-top: -10px;
+      }
+      a {
+        color: #ffffff;
+      }
+    }
+    &.quick-links li a {
+      color: #ffffff;
+    }
+    &.social li a:hover {
+      color: #eeeeee;
+    }
+    &.quick-links li {
+      padding: 3px 0;
+      -webkit-transition: .5s all ease;
+      -moz-transition: .5s all ease;
+      transition: .5s all ease;
+      &:hover {
+        padding: 3px 0;
+        margin-left: 5px;
+        font-weight: 700;
+      }
+      a i {
+        margin-right: 5px;
+      }
+      &:hover a i {
+        font-weight: 700;
+      }
+    }
+  }
+}
+#mid{
+  padding-top: 2vh;
+  text-align:center;
+  font-size:3vh;
+}
+section {
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  #footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+  }
+}
+
+/*new form*/
+
+/*new carousal*/
+
+.register {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/klore.jpg");
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.05);
+}
+.card-block {
+  button{
+  bottom: 0;
+}
+}
+/*jumbotron*/
+.jumbotron {
+  margin-top: 4rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/jumbo.png");
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  margin-bottom: 0rem;
+  
+}
+#demo {
+  
+  ul{
+    list-style: none;
+   margin-left:49%;
+   a{
+      li{
+
+        color: red;
+      }
+    }
+  }
+}
+
+
+
+
+
+
